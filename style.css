@@ -1,0 +1,23 @@
+body{
+    background-color: lightcoral;
+}
+#root{
+    height: 100vh;
+}
+#colSinistra{
+    height: 400px;
+    width: 800px;
+}
+#colDestra{
+    height: 400px;
+    width: 200px;
+}
+.imgAnteprimaContainer{
+    height: 100px;
+    width: 100%;
+}
+.imgAnteprima{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
