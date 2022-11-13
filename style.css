@@ -40,3 +40,31 @@ body{
     top: 0;      
      font-size: 40px;
  }
+ #img1Selector{
+    position: absolute;
+    color: #eee;    
+    bottom: 0;
+    left: 20%;      
+     font-size: 20px;
+ }
+ #img2Selector{
+    position: absolute;
+    color: #eee;    
+    bottom: 0;
+    left: 40%;      
+    font-size: 20px;
+ }
+ #img3Selector{
+    position: absolute;
+    color: #eee;    
+    bottom: 0; 
+    right: 40%;      
+     font-size: 20px;
+ }
+ #img4Selector{
+    position: absolute;
+    color: #eee;    
+    bottom: 0;
+    right: 20%;     
+    font-size: 20px;
+ }

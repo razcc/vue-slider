@@ -18,16 +18,20 @@ var app = new Vue({
     },
     methods: {
         Img1Selection: function () {
+            this.indice = 0
             this.imgPrincipale = this.imgArray[indice];
         },
         Img2Selection: function () {
-            this.imgPrincipale = "img/img2.jpg";
+            this.indice = 1
+            this.imgPrincipale = this.imgArray[indice];
         },
         Img3Selection: function () {
-            this.imgPrincipale = "img/img3.jpg";
+            this.indice = 2
+            this.imgPrincipale = this.imgArray[indice];
         },
         Img4Selection: function () {
-            this.imgPrincipale = "img/img4.jpg";
+            this.indice = 3
+            this.imgPrincipale = this.imgArray[indice];
         },
 
         arrowDown: function () {
