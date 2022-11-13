@@ -21,3 +21,22 @@ body{
     width: 100%;
     object-fit: cover;
 }
+
+.imgFondo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.fa-circle-arrow-down {
+    position: absolute;
+    color: #eee;    
+    bottom: 0;      
+     font-size: 40px;
+    
+ }
+ .fa-circle-arrow-up{
+    position: absolute;
+    color: #eee;    
+    top: 0;      
+     font-size: 40px;
+ }

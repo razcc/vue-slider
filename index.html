@@ -24,15 +24,18 @@
 
             <!-- ^Immagine Grande lato sinistro -->
             <div id="colSinistra">
-                <img class="imgAnteprima" :src="imgPrincipale" alt="Immagine">
+                <img class="imgAnteprima" :src="imgArray[ indice ]" alt="Immagine">
             </div>
 
             <!-- ^Immagine antemprima lato destro -->
             <div id="colDestra">
 
                 <!-- img 1 -->
-                <div class="imgAnteprimaContainer" @click="Img1Selection">
-                    <img class="imgAnteprima" :src="img1" alt="Immagine">
+                <div class="imgAnteprimaContainer imgFondo" @click="Img1Selection">
+                    <img  class="imgAnteprima" :src="img1" alt="Immagine">
+
+                    <!-- Freccia su -->
+                    <i @click="arrowUP" class="fa-solid fa-circle-arrow-up"></i>
                 </div>
 
                 <!-- img 2 -->
@@ -46,8 +49,10 @@
                 </div>
 
                 <!-- img 4 -->
-                <div class="imgAnteprimaContainer" @click="Img4Selection">
+                <div  class="imgAnteprimaContainer imgFondo" @click="Img4Selection">
                     <img class="imgAnteprima" :src="img4" alt="Immagine">
+                    <!-- Freccia giu -->
+                    <i @click="arrowDown" class="fa-solid fa-circle-arrow-down"></i>
                 </div>
             </div>
         </div>
