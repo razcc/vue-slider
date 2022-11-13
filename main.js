@@ -50,15 +50,20 @@ var app = new Vue({
         arrowUP: function () {
             let lunghezza = this.imgArray.length - 1;
             console.log(lunghezza)
+
             console.log(this.indice)
             if (this.indice > lunghezza) {
                 return this.indice = 0;
+                
             } else if (this.indice == 0) {
-                return this.indice = 3;
+                return this.indice = lunghezza;
             } else {
                 return this.indice--;
             }
-        }
-    }
+        },
+
+        
+    },
+   
 
 })

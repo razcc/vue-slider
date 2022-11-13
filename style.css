@@ -47,6 +47,11 @@ body{
     left: 20%;      
      font-size: 20px;
  }
+ i:hover{
+    color: red !important;
+    cursor: pointer;
+ }
+
  #img2Selector{
     position: absolute;
     color: #eee;    
