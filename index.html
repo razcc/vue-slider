@@ -24,14 +24,11 @@
             
             <!-- ^Immagine Grande lato sinistro -->
             <div id="colSinistra" class="imgFondo">
+                <div>
+                    <i @click="Img1Selection(index)" v-for="( elem, index) in imgArray" id="img1Selector" class="fa-solid fa-circle" :class="classeVariabile"></i>
+                </div>
                 
-                <img class="imgAnteprima" :src="imgArray[ indice ]" alt="Immagine">
-
-                <i @click="Img1Selection" id="img1Selector" class="fa-solid fa-circle"></i>
-                <i @click="Img2Selection" id="img2Selector" class="fa-solid fa-circle"></i>
-                <i @click="Img3Selection" id="img3Selector" class="fa-solid fa-circle"></i>
-                <i @click="Img4Selection" id="img4Selector" class="fa-solid fa-circle"></i>
-                
+                <img class="imgAnteprima" :src="imgArray[ indice ]" alt="Immagine">                   
             </div>
 
             <!-- ^Immagine antemprima lato destro -->

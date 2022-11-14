@@ -5,7 +5,7 @@ var app = new Vue({
         img2: "img/img2.jpg",
         img3: "img/img3.jpg",
         img4: "img/img4.jpg",
-        imgPrincipale: "",
+        
         imgArray: [
             "img/img1.jpg",
             "img/img2.jpg",
@@ -13,26 +13,20 @@ var app = new Vue({
             "img/img4.jpg",
         ],
         indice: 0,
+        classeVariabile: "",
 
 
     },
+    mounted() {
+        //Entra in gioco qunaod l'applicativo vueha caricato l'elemento #root
+        this.attivaFunzione()
+    },
     methods: {
-        Img1Selection: function () {
-            this.indice = 0
-            this.imgPrincipale = this.imgArray[indice];
+        Img1Selection: function (index) {
+            this.indice = index
+            
         },
-        Img2Selection: function () {
-            this.indice = 1
-            this.imgPrincipale = this.imgArray[indice];
-        },
-        Img3Selection: function () {
-            this.indice = 2
-            this.imgPrincipale = this.imgArray[indice];
-        },
-        Img4Selection: function () {
-            this.indice = 3
-            this.imgPrincipale = this.imgArray[indice];
-        },
+       
 
         arrowDown: function () {
             let lunghezza = this.imgArray.length - 1;
@@ -43,9 +37,9 @@ var app = new Vue({
 
             } else {
                 return this.indice++;
+                
 
             }
-
         },
         arrowUP: function () {
             let lunghezza = this.imgArray.length - 1;
@@ -61,9 +55,13 @@ var app = new Vue({
                 return this.indice--;
             }
         },
+        attivaFunzione(){
+            setInterval(()=>{this.arrowDown()},3000)
+        }
 
         
     },
+    
    
 
 })
