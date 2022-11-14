@@ -25,7 +25,7 @@
             <!-- ^Immagine Grande lato sinistro -->
             <div id="colSinistra" class="imgFondo">
                 <div>
-                    <i @click="Img1Selection(index)" v-for="( elem, index) in imgArray" id="img1Selector" class="fa-solid fa-circle" :class="classeVariabile"></i>
+                    <i @click="Img1Selection(index)" v-for="( elem, index) in imgArray" :class="(index == indice) ? 'text-primary' : 'text-black' " id="img1Selector" class="fa-solid fa-circle" ></i>
                 </div>
                 
                 <img class="imgAnteprima" :src="imgArray[ indice ]" alt="Immagine">                   
